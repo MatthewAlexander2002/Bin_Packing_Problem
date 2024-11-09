@@ -1,3 +1,4 @@
+#include "DP.hpp"
 #include <vector>
 
 //minimise dp[i] to the minium number of bins needed to place all items
