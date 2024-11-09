@@ -1,6 +1,7 @@
 #include <vector>
 #include <iostream>
 #include "bestFit.hpp"
+#include "DP.cpp"
 
 void testBinPacking(const std::vector<float>& items, int binSize, int optimalBinSize) {
     std::cout << "Items: ";
@@ -10,6 +11,7 @@ void testBinPacking(const std::vector<float>& items, int binSize, int optimalBin
     std::cout << "\nBin size: " << binSize << std::endl;
     std::cout << "Optimal bin size: " << optimalBinSize << std::endl;
     std::cout << "Best Fit bin size: " << bestFit(items, binSize) << std::endl;
+    // std::cout << "Dynamic Programming bin size: " << dynamicProgramming(items, binSize) << std::endl;
     //passes each array and the bin size to each function and prints out expected vs actual
 }
 
