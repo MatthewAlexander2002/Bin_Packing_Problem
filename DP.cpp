@@ -4,7 +4,7 @@
 //minimise dp[i] to the minium number of bins needed to place all items
 
 int dynamicProgramming(const std::vector<float>& items, int binSize) {
-    std::vector<int> dp(0, items.size());
+    std::vector<int> dp(items.size(), 0);
     dp[0] = 0; //zero items, zero bins
 
     for (int i = 0; i < items.size(); ++i){
